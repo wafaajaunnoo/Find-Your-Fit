@@ -28,7 +28,7 @@ Find Your Fit is a web application designed to help users create a personalized 
 
 ## Installation and Setup
 
-1. Clone the repository: `git clone https://github.com/wafaajaunnoo/find-your-fit.git`
+1. Clone the repository: `gh repo clone wafaajaunnoo/Find-Your-Fit`
 2. Set up a local development environment with a web server (such as Apache) and a MySQL database server.
 3. Import the provided SQL schema to set up the database structure.
 4. Update the database connection configuration in the PHP files to match your local environment.
