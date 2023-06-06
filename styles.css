@@ -1,0 +1,1477 @@
+/*styling the getready.html page*/
+.linkVids{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1px;
+}
+#myUL{
+    list-style-type: none;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  transform: scale(1.2);
+}
+.floatRight{
+  float: right;
+  margin-top: -250px;
+  margin-right: 250px;
+}
+
+.divLeft{
+  float:left;
+}
+.divvLeft{
+  float:left;
+  margin-left: -300px;
+}
+.divRight{
+  margin-left: 320px;
+  overflow:hidden;
+}
+
+/*CSS for image slideshow*/
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+.imgGallery {
+  margin-top: 150px;
+  margin-left: 25px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: 50px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 38px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-left: 475px;
+}
+
+/*styling the hamburger menu*/
+.hamburger-menu{
+  display: table-row;
+  width: 100%;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu-table{
+  display: table;
+  width: 100%;
+}
+.menu-column{
+  display: table-cell;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,.menu__btn > span::before, .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 600px;
+  height: 500px;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #465824;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+  overflow: hidden;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #E5DFDF;
+  color: #000000;
+}
+
+/*positioning buttons in header*/
+.headertitle {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.loginheader:link, .loginheader:visited {
+  background-color: #465824;
+  border-radius:15px;
+  color: white;
+  font-size:25px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:5px;
+  margin-right: 150px;
+  float:right;
+}
+
+.loginheader:hover, .loginheader:active {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.registerheader:link, .registerheader:visited {
+  background-color: #465824;
+  border-radius:15px;
+  color: white;
+  font-size:25px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:5px;
+  margin-right: 10px;
+  float:right;
+}
+.registerheader:hover, .registerheader:active {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.separation {
+  border: 1px solid #000000;
+}
+/*styling body of homepage*/
+.table-home{
+	display: table;
+	width: 100%;
+}
+.table-home-row {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.table-home-cell{
+	display: table-cell;
+  float: right;
+}
+
+.table-home-body {
+	display: table-row-group;
+}
+
+#announcement {
+font-size: 25px ;
+animation: 2s anim-lineUp ease-out infinite
+}
+@keyframes anim-lineUp {
+0% {
+  opacity: 0;
+  transform: translateY(80%);
+}
+20% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0%);
+}
+}
+#announcement:hover{
+  animation-play-state: paused;
+}
+.announcementlink:link, .announcementlink:visited {
+  background-color: #465824;
+  color: white;
+  font-size:25px;
+  padding: 0px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.announcementlink:hover, .announcementlink:active {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+
+/*styling the slideshow on homepage*/
+#slideshow {
+  box-sizing: border-box;
+  z-index: -1;
+}
+.mySlides {
+display: none;
+z-index: -1;
+}
+#slideshow-container {
+  z-index: -1;
+  display: table-cell;
+	padding: 3px 10px;
+  max-width: 100px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  z-index: -1;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/*styling footer*/
+footer{
+  background: #F2A063 ;
+   width: 100%;
+}
+.divFooter{
+	display: table;
+	width: 100%;
+  height: 150px;
+}
+.divFooterRow {
+	display: table-row;
+}
+
+.divFooterCell{
+	display: table-cell;
+	padding: 0px 170px;
+}
+
+.divFooterBody {
+	display: table-row-group;
+}
+.footertop{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+.footerlinks{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.footerlinks: hover{
+  text-decoration: none;
+  color: black;
+}
+.footerlinks: visited{
+  text-decoration: none;
+  color: black;
+}
+.footerlinks: active{
+  text-decoration: none;
+  color: black;
+}
+
+/*styling login page*/
+.loginBody {
+  background-color: #FFFFFF;
+  display: block;
+}
+.formheading {
+    margin-top: -50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.formsheading {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: #000000;
+}
+
+#loginform {
+  background-color: #F2A063;
+  width: 500px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.fieldlogin {
+  width: 425px;
+  padding: 12px;
+  border-radius:12px;
+  box-sizing: border-box;
+border: none;
+  outline: none;
+  background-color: #E5DFDF;
+}
+
+::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+#btnlogin {
+  background-color: #465824;
+  border-color: #465824;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 425px;
+}
+#btnlogin:hover {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#rememberme{
+  cursor: pointer;
+}
+#forgotpw {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 0px;
+}
+#registerhere{
+background-color: #465824;
+color: white;
+padding-top: 5px;
+padding-right: 40px;
+padding-left: 40px;
+border-radius: 7px;
+cursor: pointer;
+width: 100%;
+font-size: 5px;
+text-decoration: none;
+}
+
+#registerhere:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+
+/*styling welcome page*/
+#welcomeGif {
+  width: 250px;
+  position: relative;
+  margin-top: 250px;
+}
+
+#centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  background-color: #F2A063;
+  color: #000000;
+  padding: 10px;
+  border-radius: 15px;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+}
+.welcomeLinks{
+  background-color: #465824;
+  color: white;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.welcomeLinks:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+/*styling signup page*/
+h2 {
+  font-weight: 100;
+  font-size: 36px;
+  margin-left:77px;
+}
+.h2Class{
+  margin-top:-50px;
+  margin-left: 70px;
+}
+#signuptable {
+  margin-left: 50px;
+}
+#signupform {
+  background-color: #F2A063;
+  width: 800px;
+  height: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+#signupheading {
+  font-size: 30px;
+  font-weight: 100;
+  color: #000000;
+}
+.sufield {
+  width: 300px;
+  padding: 10px;
+  border-radius: 25px;
+  border:none;
+  background-color: #E5DFDF;
+}
+
+.fieldIcons i{
+  position: relative;
+  z-index: 0;
+  left: 30px;
+  top: 2px;
+  color: #000000;
+}
+
+#su-fname {
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  border:none;
+  background-color: #E5DFDF;
+}
+#su-lname {
+  width: 150px;
+  padding: 10px;
+  border-radius: 25px;
+  border:none;
+  background-color: #E5DFDF;
+}
+.sufieldage {
+  width: 110px;
+  padding: 10px;
+  border-radius: 25px;
+  border:none;
+  background-color: #E5DFDF;
+}
+#roundbutton{
+  float: left;
+  margin-left: 170px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: #465824;
+  color: #E5DFDF;
+  height: 150px;
+  width: 150px;
+  background: #465824;
+  border: none;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+#roundbutton::before {
+  content: '';
+  border-radius: 1000px;
+  min-width: calc(150px + 15px);
+  min-height: calc(150px + 15px);
+  border: 6px solid #F2A063;
+  box-shadow: 0 0 60px #F2A063;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+#roundbutton:hover, #roundbutton:focus {
+  color: #E5DFDF;
+  transform: translateY(-6px);
+}
+#roundbutton:hover::before, #roundbutton:focus::before {
+  opacity: 1;
+}
+#roundbutton::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #F2A063;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+#roundbutton:hover::after, #roundbutton:focus::after {
+  animation: none;
+  display: none;
+}
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+#loginLink{
+     margin-left: 125px;
+}
+#loginhere {
+   background-color: #465824;
+   color: white;
+   padding-top: 5px;
+   padding-right: 40px;
+   padding-left: 40px;
+   border-radius: 7px;
+   cursor: pointer;
+   width: 100%;
+   font-size: 5px;
+   text-decoration: none;
+ }
+ #loginhere:hover{
+   background-color: #E5DFDF;
+   color: black;
+   -webkit-transition:all 1s;
+   -moz-transition: all 1s;
+ }
+#roundbutton:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#continue {
+  margin-left: 275px;
+  font-size: 25px;
+}
+/*styling second signup page*/
+#signup2Body {
+  background-color: #FFFFFF;
+  display: block;
+}
+#su2form{
+  display: table;
+  background-color: #F2A063;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.su2fields {
+  margin-left: 60px;
+  border-radius: 15px;
+  outline:none;
+  border:none;
+  width: 250px;
+  height: 30px;
+  background-color: #E5DFDF;
+  padding-left: 5px;
+}
+
+.SignUp2Rows{
+    display: table-row;
+}
+
+#labelSignUp{
+  font-size: 25px;
+  color: #000000;
+  display: table-cell;
+  padding-left: 5px;
+  text-align: left;
+}
+
+#UploadSignUp{
+  font-size: 25px;
+  color: #000000;
+  margin-left: -800px;
+  display: table-cell;
+}
+#btnUploadS{
+  border-radius: 15px;
+  border: none;
+  outline:none;
+  color: #ffffff;
+  background-color: #465824;
+  padding: 5px 25px;
+  font-size: 15px;
+}
+#healthreports {
+  display: table-cell;
+  width: 370px;
+  height: 200px;
+  margin-right: 60px;
+  background-color: #E5DFDF;
+  border: none;
+}
+/*styling the upload image button*/
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.btnUpload {
+  border-radius: 15px;
+  border: none;
+  outline:none;
+  color: #ffffff;
+  background-color: #465824;
+  padding: 5px 25px;
+  font-size: 15px;
+}
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/*styling contact page*/
+#contactusintro {
+  margin-left: 77px;
+  font-size: 25px;
+  font-weight: 100;
+  }
+#contactform {
+    width: 105%;
+    margin: 30px auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    background-color:#F2A063;
+    margin-left: 25px;
+}
+#contactFheading{
+    margin-left: 270px;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    color: #000000;
+}
+/*styling labels on contact form*/
+.contactrow {
+  display: table-row;
+}
+.contactcell {
+  display: table-cell;
+}
+.contactcell1 {
+  display: table-cell;
+}
+#contactcell2{
+  display: table-cell;
+  align-items: center;
+  align-content: center;
+}
+.contactcellbtn {
+  margin-left: 300px;
+  display: table-cell;
+  align-items: center;
+}
+.contactlabels {
+  font-size: 27px;
+}
+#contactfname {
+  width: 200px;
+}
+#contactlname {
+  width: 200px;
+}
+#contactemail {
+  width: 430px;
+}
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group input {
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#message{
+      height: 200px;
+      width: 440px;
+      border-radius: 5px;
+      border: 1px solid black;
+}
+textarea{
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#iframeContact{
+display: block;
+    margin-right: 100px;
+    margin-left: 120px;
+}
+/*styling buttons on contact page*/
+#btnSendmsg {
+  background-color: #465824;
+  color: white;
+  font-size:15px;
+  padding: 5px 30px;
+  text-align: center;
+  display: block;
+  margin-left: 50px;
+  text-decoration: none;
+}
+#btnSendmsg:hover,  {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#btnSendmsg:active{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+  transform: translateY(4px);
+}
+.upload-btn-wrapper2 {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btnUpload2 {
+  border: none;
+  outline:none;
+  color: #ffffff;
+  background-color: #465824;
+  padding: 5px 25px;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+.upload-btn-wrapper2 input[type=file] {
+  font-size: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/*styling the settings page*/
+#settingsintro{
+  font-size: 25px;
+  margin-left:125px;
+}
+#h2Settings{
+  font-size: 35px;
+  margin-left:125px;
+}
+h1{
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+/*setting the table structure using div and css*/
+#settingsform{
+  width: 90%;
+  height: 350px;
+  border-radius: 5px;
+  background-color:#F2A063;
+  margin-left: 50px;
+}
+#settingslabelf1{
+  display: table-cell;
+}
+#settingsinputf1{
+  display: table-cell;
+}
+/*styling labels and textfields on settings page*/
+.labelsettings{
+  font-size: 25px;
+  margin-left: 30px;
+}
+.settingsInput{
+  background-color: #E5DFDF;
+  border-top-color: #E5DFDF;
+  border-bottom-color: #E5DFDF;
+  border-left-color: #E5DFDF;
+  border-right-color: #E5DFDF;
+  border-radius: 5px;
+  width: 210px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  border: none;
+  padding: 5px 20px;
+}
+#settingsage{
+  background-color: #E5DFDF;
+  border-top-color: #E5DFDF;
+  border-bottom-color: #E5DFDF;
+  border-left-color: #E5DFDF;
+  border-right-color: #E5DFDF;
+  border-radius: 5px;
+  width: 70px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  border: none;
+  padding: 5px 20px;
+}
+input[type=submit], input[type=reset] {
+  background-color: #465824;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size:15px;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btnsSettingsf1{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background-color: #465824;
+  margin: 10px;
+}
+.btnsSettingsf1:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.btnsSettingsf1:active{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+    transform: translateY(20px);
+}
+.btnsSettingsf2{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  float: right;
+  margin: 10px;
+}
+.btnsSettingsf2:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.btnsSettingsf2:active{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+  transform: translateY(20px);
+}
+h4{
+  font-size: 30px;
+  margin-left: 30px;
+  font-weight: 100;
+}
+#settingsBtnF2{
+  margin-top: 172px;
+}
+/*styling the Choosing a trainer page*/
+#chooseTrainerIntro{
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 100;
+}
+#containerTrainer{
+  display: table;
+  align-items: center;
+  align-content: center;
+  margin-left: 70px;
+  margin-top: 30px;
+  width: 1300px;
+}
+#trainerR1{
+  display: table-row-group;
+  margin-top:30px;
+
+}
+#trainer1{
+  display: table-cell;
+}
+#trainer2{
+  display: table-cell;
+}
+#trainer3{
+  display: table-cell;
+}
+#trainer4{
+  display: table-cell;
+}
+#container2Trainer{
+  padding-left: 100px;
+  padding-top: 50px;
+}
+.trainerC2{
+  padding-left: 50px;
+}
+/*styling images on the choose a trainer page*/
+#imaget1{
+  width: 150px;
+  height: 150px ;
+  border-radius: 50%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imaget1:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imaget2{
+  width: 150px;
+  height: 150px ;
+  border-radius: 50%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imaget2:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imaget3{
+  width: 150px;
+  height: 150px ;
+  border-radius: 50%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imaget3:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imaget4{
+  width: 150px;
+  height: 150px ;
+  border-radius: 50%;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imaget4:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imgKayla{
+  width: 250px;
+  height: 150px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imgKayla:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imgEmilie{
+  width: 240px;
+  height: 150px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imgEmilie:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imgChristine{
+  width: 250px;
+  height: 150px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imgChristine:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#imgAnne{
+  width: 240px;
+  height: 150px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+#imgAnne:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/*styling the know more and choose trainer buttons using css*/
+#knowmore1{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  margin-left: -120px;
+  border: none;
+}
+#knowmore1:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore2{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  margin-left: -120px;
+  border: none;
+}
+#knowmore2:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore3{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  margin-left: -120px;
+  border: none;
+}
+#knowmore3:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore4{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  margin-left: -120px;
+  border: none;
+}
+#knowmore4:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore5{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  border: none;
+  margin-left: 30px;
+}
+#knowmore5:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore6{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  border: none;
+  margin-left: 30px;
+}
+#knowmore6:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore7{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  border: none;
+  margin-left: 30px;
+}
+#knowmore7:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#knowmore8{
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #465824;
+  border: none;
+  margin-left: 30px;
+}
+#knowmore8:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.btnTrainer1{
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+  background: #465824;
+  border: none;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.btnTrainer1:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+.btnTrainer2{
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+  background: #465824;
+  border: none;
+  text-decoration: none;
+}
+
+.btnTrainer2:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+
+/*styling texts on choose your trainor page*/
+#more1{
+  text-align: center;
+  width: 150px;
+}
+#more2{
+  text-align: center;
+  width: 150px;
+}
+#more3{
+  text-align: center;
+  width: 150px;
+}
+#more4{
+  text-align: center;
+  width: 150px;
+}
+.trainerInfo{
+  font-size: 20px;
+  margin-left: 30px;
+}
+#more5{
+  text-align: left;
+  width: 250px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+#more6{
+  text-align: left;
+  width: 250px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+#more7{
+  text-align: left;
+  width: 250px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+#more8{
+  text-align: left;
+  width: 250px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.trainerInfo{
+  font-size: 20px;
+  margin-left: 30px;
+}
+/*styling the timetable page*/
+#workoutIntro{
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 50px;
+}
+#workoutIntro{
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 50px;
+}
+.labelWO{
+  font-size: 20px;
+}
+.inputWO{
+  width:90px;
+}
+#btnWO{
+  float:right;
+}
+.timetableDiv{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/*styling the dropdown menu on the timetable page*/
+.dropdown-btn{
+  border: 1px solid black;
+  background-color: white;
+  color:black;
+  margin-bottom: 15px;;
+}
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+.dropdown-container  ul li  {
+  width: 148px;
+  height: 25px;
+  display: block;
+  text-decoration: none;
+  text-align:left;
+  font-family: Georgia,'Times New Roman',serif;
+
+}
+.dropdown-container  ul li a{
+  color:#596235;
+  text-decoration: none;
+}
+#tableWO{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding-top: 200px;
+  width: 90%;
+  height: 100%;
+  margin-left: 40px;
+}
+#workoutTable{
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+#tableTT{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding-top: 200px;
+  width: 90%;
+  height: 100%;
+  margin-left: 40px;
+}
+.labelTT{
+  font-size: 20px;
+  width:120px;
+}
+.inputTT{
+  width:90px;
+  width:120px;
+}
+.timetableTH{
+  font-size: 20px;
+  font-weight: 200px;
+  text-align: center;
+  padding: 5px;
+}
+.timetableTR:hover {
+  background-color:#FDE1BA;
+}
+#timetableSave{
+  float: right;
+}
+/*styling Your Trainees page*/
+#headerTrainee{
+  display: table-row;
+}
+#loginTrainee:link, #loginTrainee:visited {
+  background-color: #465824;
+  border-radius:15px;
+  color: white;
+  font-size:25px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:5px;
+  margin-right: 350px;
+  float:right;
+}
+
+#loginTrainee:hover, #loginTrainee:active {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#registerTrainee:link, #registerTrainee:visited {
+  background-color: #465824;
+  border-radius:15px;
+  color: white;
+  font-size:25px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top:5px;
+  margin-right: 10px;
+  float:right;
+}
+#registerTrainee:hover, #registerTrainee:active {
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+
+#btnReport{
+  margin-bottom: 15px;
+  background-color:#465824;
+  color: white;
+  border:none;
+  outline: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+#btnReport:hover{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+}
+#btnReport:active{
+  background-color: #E5DFDF;
+  color: black;
+  -webkit-transition:all 1s;
+  -moz-transition: all 1s;
+  transform: translateY(15px);
+}
+
+#myTable{
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 55%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.myTableTH {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 25px;
+  color:black;
+}
+.myTableTR{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color:black;
+}
+.myTableTD{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color:black;
+  font-size: 25px;
+}
